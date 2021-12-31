@@ -1,0 +1,24 @@
+<html>
+<head>
+    <title> User login </title>
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/mainpage.css') }}">
+</head>
+    <body>
+        <div class="login-box">
+        <img src="{{url_for('static', filename='styles/avatar.png')}}" class="avatar">
+        <h1>Login Here</h1>
+        <h2>{{ msg }}</h2>
+            <form method="post">
+                    <p>Username</p>
+                    <input type="text" name="username" placeholder="Enter Username">
+                    <p>Password</p>
+                    <input type="password" name="password" placeholder="Enter Password">
+                    <p><input id="rememberme" name="rememberme" value="remember" type="checkbox" />&nbsp;Remember me</p>
+                    <input type="submit" class='btn' value="Login">
+                    <a href="#">Forget Password</a>    
+            </form>
+        
+        </div>
+    
+    </body>
+</html>
